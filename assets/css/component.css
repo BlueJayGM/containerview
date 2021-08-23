@@ -1,0 +1,65 @@
+/* ._ Add your code here _. */
+
+/* Button */
+.btn {
+	background-color: #4242c2;
+
+	padding: 0.625rem 1.875rem;
+
+	border-radius: 0.25rem;
+
+	color: var(--white);
+	font-weight: 500;
+
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+
+	cursor: pointer;
+
+	z-index: 10;
+
+	transition: .4s;
+}
+
+.btn:hover {
+	background-color: var(--blue-light);
+}
+
+/* Button Success */
+.success {
+	background-color: var(--green);
+	color: var(--text-input);
+}
+
+.success:hover {
+	background-color: var(--green-light);
+}
+
+/* Ball */
+.ball {
+	background-color: var(--red-light);
+
+	width: 1.25rem;
+	height: 1.25rem;
+
+	border-radius: 100%;
+
+	position: absolute;
+
+	bottom: -20px;
+	left: 0;
+
+	animation-name: flyBall;
+	animation-duration: 0.6s;
+	animation-timing-function: ease-in;
+	animation-fill-mode: forwards;
+}
+
+@keyframes flyBall {
+	50% {
+		opacity: 50%;
+	}
+	to {
+		bottom: calc(80% - 20px);
+		opacity: 0;
+	}
+}
