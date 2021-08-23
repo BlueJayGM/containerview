@@ -1,3 +1,5 @@
+// Delete and start a new one or modify it, feel free.
+
 var container = window.document.querySelector("div.container");
 var component = window.document.querySelector("button.btn");
 var logo = window.document.querySelector("div.logo");
@@ -5,7 +7,7 @@ var logo = window.document.querySelector("div.logo");
 component.addEventListener("click", onSuccess);
 
 logo.addEventListener("click", () => {
-	window.open("https://github.com/BlueJayGM", "_blank");
+	window.open("https://github.com/BlueJayGM/containerview.git", "_blank");
 });
 
 function onSuccess(event) {
